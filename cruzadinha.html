@@ -9,28 +9,106 @@
     body {
         margin: 0;
         padding: 0;
+        background-color: #F0F2F2;
     }
     header {
         padding: 15px;
-        background-color: rgb(235, 177, 20);
+        background-color: #73161E;
+        box-shadow: 0 0 5px black;
+        color: antiquewhite;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
     }
     .tabela {
-        border: 1px solid black;
+        border: 3px solid #73161E;
+        border-radius: 25px;
+        background-color: #0A1E26;
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 70%;
         height: 500px;
+        box-shadow: 0 0 5px black;
     }
     .quadradinho {
         background-color: white;
-        width: 25px;
-        height: 25px;
+        width: 26px;
+        height: 26px;
+        font-size: 20px;
+        border: 1px solid #0A1E26;
+        text-align: center;
+        background-color: #0A1E26;
+    }
+    .quadradinhoCorreto {
+        background-color: white;
+        width: 26px;
+        height: 26px;
         font-size: 20px;
         border: 1px solid black;
         text-align: center;
     }
+    .interagir {
+        margin-top: 10px;
+        border: 1px solid #73161E;
+        background-color: #D7D9D9;
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+        text-align: center;
+        justify-self: center;
+        margin-bottom: 25px;
+        border-radius: 20px;
+        box-shadow: 0 0 5px black;
+    }
+    .interagir #divPergunta {
+        margin-bottom: 5px;
+        flex-wrap: wrap;
+        margin-top: 5px;
+        font-weight: bold;
+        padding: 10px;
+    }
+    .inserir {
+        display: flex;
+        /* border: 1px solid black; */
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    input {  
+        width: 40%;
+        height: 22px;
+        justify-self: center;
+        border-radius: 10px;
+        text-align: center;
+        font-weight: bold;
+        border-style: none;
+        box-shadow: 0 0 5px black;
+    }
+    .botao {
+        /* border: 2px solid black; */
+        margin-bottom: 10px;
+    }
+    button {
+        width: 20%;
+        height: 30px;
+        background-color: #73161E;
+        border-style: none;
+        border-radius: 8px;
+        color: antiquewhite;
+        font-size: 15px;
+    }
+    button:hover {
+        background-color: #d34753;
+    }
     footer {
-        background-color: rgb(235, 177, 20);
+        background-color: #73161E;
+        color: antiquewhite;
+        box-shadow: 0 0 5px black;
         display: flex;
         justify-content: center;
         padding: 40px;
@@ -39,9 +117,10 @@
 </style>
 <body>
     <header>
-        oi
+        Cruzadinha ARQC
     </header>
 
+    <div class="container">
     <table class="tabela">
         <tr>
             <td class="quadradinho"></td>
@@ -65,7 +144,7 @@
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
-            <td class="quadradinho" id="c55">xa</td>
+            <td class="quadradinhoCorreto" id="c55"></td>
         </tr>
         <tr>
             <td class="quadradinho"></td>
@@ -89,7 +168,7 @@
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
-            <td class="quadradinho" id="c56">xd</td>
+            <td class="quadradinhoCorreto" id="c56"></td>
         </tr>
         <tr>
             <td class="quadradinho"></td>
@@ -113,7 +192,7 @@
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
-            <td class="quadradinho" id="c57">xr</td>
+            <td class="quadradinhoCorreto" id="c57"></td>
         </tr>
         <tr>
             <td class="quadradinho"></td>
@@ -137,7 +216,7 @@
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
-            <td class="quadradinho" id="c58">xe</td>
+            <td class="quadradinhoCorreto" id="c58"></td>
         </tr>
         <tr>
             <td class="quadradinho"></td>
@@ -145,7 +224,7 @@
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
-            <td class="quadradinho" id="c10">x</td>
+            <td class="quadradinhoCorreto" id="c10"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
@@ -161,7 +240,7 @@
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
-            <td class="quadradinho" id="c59">xs</td>
+            <td class="quadradinhoCorreto" id="c59"></td>
         </tr>
         <tr>
             <td class="quadradinho"></td>
@@ -169,7 +248,7 @@
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
-            <td class="quadradinho" id="c11">x</td>
+            <td class="quadradinhoCorreto" id="c11"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
@@ -181,11 +260,11 @@
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
-            <td class="quadradinho" id="c47">xc</td>
+            <td class="quadradinhoCorreto" id="c47"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
-            <td class="quadradinho" id="c60">xs</td>
+            <td class="quadradinhoCorreto" id="c60"></td>
         </tr>
         <tr>
             <td class="quadradinho"></td>
@@ -193,64 +272,39 @@
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
-            <td class="quadradinho" id="c12">x</td>
-            <td class="quadradinho" id="c14">x</td>
-            <td class="quadradinho" id="c15">x</td>
-            <td class="quadradinho" id="c16">x</td>
-            <td class="quadradinho" id="c17">x</td>
-            <td class="quadradinho" id="c18">x</td>
-            <td class="quadradinho" id="c19">x</td>
-            <td class="quadradinho" id="c20">x</td>
-            <td class="quadradinho" id="c21">x</td>
-            <td class="quadradinho" id="c22">x</td>
-            <td class="quadradinho" id="c23">x</td>
-            <td class="quadradinho" id="c24">x</td>
-            <td class="quadradinho" id="c25">x</td>
+            <td class="quadradinhoCorreto" id="c12"></td>
+            <td class="quadradinhoCorreto" id="c14"></td>
+            <td class="quadradinhoCorreto" id="c15"></td>
+            <td class="quadradinhoCorreto" id="c16"></td>
+            <td class="quadradinhoCorreto" id="c17"></td>
+            <td class="quadradinhoCorreto" id="c18"></td>
+            <td class="quadradinhoCorreto" id="c19"></td>
+            <td class="quadradinhoCorreto" id="c20"></td>
+            <td class="quadradinhoCorreto" id="c21"></td>
+            <td class="quadradinhoCorreto" id="c22"></td>
+            <td class="quadradinhoCorreto" id="c23"></td>
+            <td class="quadradinhoCorreto" id="c24"></td>
+            <td class="quadradinhoCorreto" id="c25"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
-            <td class="quadradinho" id="c61">x*</td>
+            <td class="quadradinhoCorreto" id="c61"></td>
         </tr>
         <tr>
             <td class="quadradinho"></td>
-            <td class="quadradinho" id="c1">x</td>
+            <td class="quadradinhoCorreto" id="c1"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
-            <td class="quadradinho" id="c13">x</td>
+            <td class="quadradinhoCorreto" id="c13"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
-            <td class="quadradinho" id="c64">x5</td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho" id="c66">xu</td>
+            <td class="quadradinhoCorreto" id="c64"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho" id="c62">xb</td>
-        </tr>
-
-        <tr>
-            <td class="quadradinho"></td>
-            <td class="quadradinho" id="c2">x</td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho" id="c6">x</td>
-            <td class="quadradinho" id="c8">x</td>
-            <td class="quadradinho" id="c9">x</td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho" id="c43">xf</td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho" id="c67">xa</td>
+            <td class="quadradinhoCorreto" id="c66"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
@@ -258,54 +312,79 @@
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
-            <td class="quadradinho" id="c63">xu</td>
+            <td class="quadradinhoCorreto" id="c62"></td>
         </tr>
 
         <tr>
             <td class="quadradinho"></td>
-            <td class="quadradinho" id="c3">x</td>
-            <td class="quadradinho" id="c4">x</td>
-            <td class="quadradinho" id="c5">x</td>
+            <td class="quadradinhoCorreto" id="c2"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinhoCorreto" id="c6"></td>
+            <td class="quadradinhoCorreto" id="c8"></td>
+            <td class="quadradinhoCorreto" id="c9"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinhoCorreto" id="c43"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinhoCorreto" id="c67"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
-            <td class="quadradinho" id="c44">xl</td>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinhoCorreto" id="c63"></td>
+        </tr>
+
+        <tr>
+            <td class="quadradinho"></td>
+            <td class="quadradinhoCorreto" id="c3"></td>
+            <td class="quadradinhoCorreto" id="c4"></td>
+            <td class="quadradinhoCorreto" id="c5"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
-            <td class="quadradinho" id="c68">xl</td>
-            <td class="quadradinho" id="c41">xd</td>
-            <td class="quadradinho" id="c48">xa</td>
-            <td class="quadradinho" id="c49">xt</td>
-            <td class="quadradinho" id="c50">xa</td>
-            <td class="quadradinho" id="c51">x*</td>
-            <td class="quadradinho" id="c52">xb</td>
-            <td class="quadradinho" id="c53">xu</td>
-            <td class="quadradinho" id="c54">xs</td>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinhoCorreto" id="c44"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinhoCorreto" id="c68"></td>
+            <td class="quadradinhoCorreto" id="c41"></td>
+            <td class="quadradinhoCorreto" id="c48"></td>
+            <td class="quadradinhoCorreto" id="c49"></td>
+            <td class="quadradinhoCorreto" id="c50"></td>
+            <td class="quadradinhoCorreto" id="c51"></td>
+            <td class="quadradinhoCorreto" id="c52"></td>
+            <td class="quadradinhoCorreto" id="c53"></td>
+            <td class="quadradinhoCorreto" id="c54"></td>
         </tr>
         
         <tr>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
-            <td class="quadradinho" id="c7">x</td>
-            <td class="quadradinho" id="c26">xe</td>
-            <td class="quadradinho" id="c27">xm</td>
-            <td class="quadradinho" id="c28">xo</td>
-            <td class="quadradinho" id="c29">xr</td>
-            <td class="quadradinho" id="c30">xi</td>
-            <td class="quadradinho" id="c31">xa</td>
-            <td class="quadradinho" id="c32">x*</td>
-            <td class="quadradinho" id="c33">xd</td>
-            <td class="quadradinho" id="c34">xe</td>
-            <td class="quadradinho" id="c35">x*</td>
-            <td class="quadradinho" id="c36">xm</td>
-            <td class="quadradinho" id="c37">xa</td>
-            <td class="quadradinho" id="c38">xs</td>
-            <td class="quadradinho" id="c39">xs</td>
-            <td class="quadradinho" id="c40">xa</td>
+            <td class="quadradinhoCorreto" id="c7"></td>
+            <td class="quadradinhoCorreto" id="c26"></td>
+            <td class="quadradinhoCorreto" id="c27"></td>
+            <td class="quadradinhoCorreto" id="c28"></td>
+            <td class="quadradinhoCorreto" id="c29"></td>
+            <td class="quadradinhoCorreto" id="c30"></td>
+            <td class="quadradinhoCorreto" id="c31"></td>
+            <td class="quadradinhoCorreto" id="c32"></td>
+            <td class="quadradinhoCorreto" id="c33"></td>
+            <td class="quadradinhoCorreto" id="c34"></td>
+            <td class="quadradinhoCorreto" id="c35"></td>
+            <td class="quadradinhoCorreto" id="c36"></td>
+            <td class="quadradinhoCorreto" id="c37"></td>
+            <td class="quadradinhoCorreto" id="c38"></td>
+            <td class="quadradinhoCorreto" id="c39"></td>
+            <td class="quadradinhoCorreto" id="c40"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
@@ -318,38 +397,14 @@
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
-            <td class="quadradinho" id="c65">x7</td>
+            <td class="quadradinhoCorreto" id="c65"></td>
             <td class="quadradinho"></td>
-            <td class="quadradinho" id="c45">xs</td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho" id="c69">xc</td>
-            <td class="quadradinho" id="c42">xa</td>
+            <td class="quadradinhoCorreto" id="c45"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-        </tr>
-        <tr>
-            <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho" id="c46">xh</td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho"></td>
-            <td class="quadradinho" id="c70">xo</td>
-            <td class="quadradinho"></td>
+            <td class="quadradinhoCorreto" id="c69"></td>
+            <td class="quadradinhoCorreto" id="c42"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
@@ -368,11 +423,35 @@
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
+            <td class="quadradinhoCorreto" id="c46"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinhoCorreto" id="c70"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
-            <td class="quadradinho" id="c71">xr</td>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+        </tr>
+        <tr>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinho"></td>
+            <td class="quadradinhoCorreto" id="c71"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
@@ -388,15 +467,15 @@
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
-            <td class="quadradinho" id="c73">xq</td>
-            <td class="quadradinho" id="c74">xu</td>
-            <td class="quadradinho" id="c75">xa</td>
-            <td class="quadradinho" id="c76">xd</td>
-            <td class="quadradinho" id="c77">x*</td>
-            <td class="quadradinho" id="c78">xc</td>
-            <td class="quadradinho" id="c79">xo</td>
-            <td class="quadradinho" id="c80">xr</td>
-            <td class="quadradinho" id="c72">xe</td>
+            <td class="quadradinhoCorreto" id="c73"></td>
+            <td class="quadradinhoCorreto" id="c74"></td>
+            <td class="quadradinhoCorreto" id="c75"></td>
+            <td class="quadradinhoCorreto" id="c76"></td>
+            <td class="quadradinhoCorreto" id="c77"></td>
+            <td class="quadradinhoCorreto" id="c78"></td>
+            <td class="quadradinhoCorreto" id="c79"></td>
+            <td class="quadradinhoCorreto" id="c80"></td>
+            <td class="quadradinhoCorreto" id="c72"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
             <td class="quadradinho"></td>
@@ -407,12 +486,17 @@
             <td class="quadradinho"></td>
         </tr>
     </table>
+    </div>
 
     <div class="interagir">
-    <div id="divPergunta">Qual nome do bgl la?</div>
-    <input type="text" id="inputResposta">
-    <br>
-    <button onclick="C()">C</button>
+        <div id="divPergunta">Cérebro do computador, onde processa dados, realiza cálculos e executa tarefas</div>
+        <div class="inserir">
+        <input type="text" id="inputResposta">
+        </div>
+        <div class="botao">
+        <button onclick="C()">Verificar</button>
+        </div>
+    </div>
     </div>
     <footer>
         Desenvolvido por Luan de Assis
@@ -450,22 +534,25 @@
             c1.innerHTML = 'C';
             c2.innerHTML = 'P';
             c3.innerHTML = 'U';
-            divPergunta.innerHTML = 'Qual o outro bgl la?'
+            divPergunta.innerHTML = 'Utilizada especificamente para realizar cálculos aritméticos';
             resposta2 = true
         }
         if (resposta == 'ULA' && resposta2) {
             c4.innerHTML = 'L';
             c5.innerHTML = 'A';
+            divPergunta.innerHTML = 'Principal tipo armazenamento temporários de informações em uso';
             resposta3 = true
         }
         if (resposta == 'RAM' && resposta3) {
             c6.innerHTML = 'R';
             c7.innerHTML = 'M';
+            divPergunta.innerHTML = 'Tipo de armazenamento permanente de instruções do sistema, sem poder ser modificada';
             resposta4 = true
         }
         if (resposta == 'ROM' && resposta4) {
             c8.innerHTML = 'O';
             c9.innerHTML = 'M';
+            divPergunta.innerHTML = 'Tipo de armazenamento não volátil que pode ser através de luz ultravioleta';
             resposta5 = true
         }
         if (resposta == 'EPROM' && resposta5) {
@@ -473,6 +560,7 @@
             c11.innerHTML = 'P';
             c12.innerHTML = 'R';
             c13.innerHTML = 'O';
+            divPergunta.innerHTML = 'Armazena dados temporários de maneira extremamente rápida na CPU';
             resposta6 = true
         }
         if (resposta == 'REGISTRADORES' && resposta6) {
@@ -488,6 +576,7 @@
             c23.innerHTML = 'R';
             c24.innerHTML = 'E';
             c25.innerHTML = 'S';
+            divPergunta.innerHTML = 'Tipo de armazenamento permanente com grande capacidade';
             resposta7 = true
         }
         if (resposta == 'MEMÓRIA DE MASSA' && resposta7) {
@@ -506,6 +595,7 @@
             c38.innerHTML = 'S';
             c39.innerHTML = 'S';
             c40.innerHTML = 'A';
+            divPergunta.innerHTML = 'Tipo de armazenamento não volátil modificada somente com eletricidade';
             resposta8 = true
         }
         if (resposta == 'FLASH' && resposta8) {
@@ -513,15 +603,18 @@
             c44.innerHTML = 'L';
             c45.innerHTML = 'S';
             c46.innerHTML = 'H';
+            divPergunta.innerHTML = 'Ativado pela CPU, transfere dados entre a memória e dispositivos I/O';
             resposta9 = true
         }
         if (resposta == 'DMA' && resposta9) {
             c41.innerHTML = 'D';
             c42.innerHTML = 'A';
+            divPergunta.innerHTML = 'Sinal de comunicação entre memória ou dispositivo de I/O para o processador';
             resposta10 = true
         }
         if (resposta == 'CS' && resposta10) {
             c47.innerHTML = 'C';
+            divPergunta.innerHTML = 'Responsável por transportar dados entre o processador e outros componentes.';
             resposta11 = true
         }
         if (resposta == 'DATA BUS' && resposta11) {
@@ -532,6 +625,7 @@
             c52.innerHTML = 'B';
             c53.innerHTML = 'U';
             c54.innerHTML = 'S';
+            divPergunta.innerHTML = 'Responsável por transportar endereços de memória para os componentes';
             resposta12 = true
         }
         if (resposta == 'ADRESS BUS' && resposta12) {
@@ -544,14 +638,17 @@
             c61.innerHTML = '*';
             c62.innerHTML = 'B';
             c63.innerHTML = 'U';
+            divPergunta.innerHTML = 'Processador da Intel Corporation de médio desempenho, com 32 ou 64 bits, feito em 2009 ideal para multitarefas';
             resposta13 = true
         }
         if (resposta == 'I5' && resposta13) {
             c64.innerHTML = '5';
+            divPergunta.innerHTML = 'Processador da Intel Corporation de alto desempenho lançado em 2008, ótimo para tarefas intensivas, com arquitetura de 64 bits';
             resposta14 = true
         }
         if (resposta == 'I7' && resposta14) {
             c65.innerHTML = '7';
+            divPergunta.innerHTML = 'Processador com 2 núcleos permitindo multitarefa';
             resposta15 = true
         }
         if (resposta == 'DUAL CORE' && resposta15) {
@@ -562,6 +659,7 @@
             c70.innerHTML = 'O';
             c71.innerHTML = 'R';
             c72.innerHTML = 'E';
+            divPergunta.innerHTML = 'Processador com 4 núcleos em que apresenta um maior desempenho';
             resposta16 = true
         }
         if (resposta == 'QUAD CORE' && resposta16) {
